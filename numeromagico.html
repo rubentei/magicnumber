@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>JavaScript - Código adivina un número entre 1 y 100</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .acertado {color: #f00; font-weight: bold;}
+            .fin      {font-weight: bold;}
+            .error    {color:#000;}
+        </style>
+        <script src="numeromagico.js"></script>
+    </head>
+
+    <body> 
+        <h1>Adivina un número entre 1 y 100</h1>
+        
+        <form onsubmit = "return adivinar()">
+            Indica el número de intentos posibles:
+            <input type="text" name="numeroRespuestas" id="numeroRespuestas">
+            
+            <br>Indica un número entre 1 y 100:
+            <input type="text" name="numero" id="numero" disabled>
+
+            <br><input type="submit" value="Adivinar" id="btnEnviar">
+        </form>
+
+        <div id="respuestas"></div>
+    </body> <!--.body-->
+</html>
